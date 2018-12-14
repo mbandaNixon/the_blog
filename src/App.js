@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Router, Route, Redirect, Switch } from 'react-router-dom';
 import { history } from './store';
-import  Dashboard  from '../src/pages/dashboard'
+import  Dashboard  from '../src/pages/home'
 import './App.css';
 
 class App extends Component {
@@ -10,10 +10,9 @@ class App extends Component {
     return (
       <div className="App">
         <Router history={history}>
-          <Switch>
 
-            <Redirect to="/dashboard" />
-          </Switch>
+            <Dashboard to="/dashboard" />
+     
         </Router>
       </div>
     );
@@ -24,4 +23,4 @@ class App extends Component {
 //App.displayName = 'App'
 
 
-export default Dashboard(App);
+export default App;
