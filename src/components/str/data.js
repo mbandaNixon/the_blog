@@ -3,35 +3,41 @@ export const muscles = [
 ];
 
 
-export const excersises = [
+export const exercises = [
     {
-        id: 'A',
-        title: 'Tttle',
-        description: 'component you must first add ',
+        id: '1',
+        title: 'one of',
+        description: 'muscles you must first add ',
+        muscles: 'arm'
+    }, 
+    {
+        id: '6',
+        title: 'Arms sence',
+        description: 'arm you must first add ',
         muscles: 'arm'
     },
     {
-        id: 'A',
-        title: 'Tttle',
-        description: 'component you must first add ',
+        id: '2',
+        title: 'Know More',
+        description: 'tights you must first add ',
         muscles: 'tights'
     },
     {
-        id: 'A',
-        title: 'Tttle',
-        description: 'component you must first add ',
+        id: '3',
+        title: 'Our brest',
+        description: 'chest you must first add ',
         muscles: 'chest'
     },
     {
-        id: 'A',
-        title: 'Tttle',
-        description: 'component you must first add ',
+        id: '4',
+        title: 'High level',
+        description: 'stomach you must first add ',
         muscles: 'stomach'
     },
     {
-        id: 'A',
-        title: 'Tttle',
-        description: 'component you must first add ',
+        id: '5',
+        title: 'Google out',
+        description: 'hands you must first add ',
         muscles: 'hands'
     }
 ]

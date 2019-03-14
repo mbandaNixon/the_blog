@@ -12,16 +12,31 @@ class footer extends Component {
 
     render() {
 
+        const muscles = this.props.muscles;
+        const category = this.props.category;
+        const index = category ? muscles.findIndex(groupe => groupe === category) + 1 : 0;
+
+        const onSelect = this.props.onSelect;
+        const indexonSelect = (e, index) => {
+            onSelect(index === 0 ? '' : muscles[index - 1])
+        }
+
+
         return (
             <div>
                 <Paper>
+                   
                     <Tabs
-                        value={0}
+                        value={index}
+                        onChange={indexonSelect}
                         indicatorColor="primary"
                         textColor="primary"
-                        centered>
-                        {this.props.muscles.map( (groupe) => 
-                        <Tab label={groupe} />
+                        centered >
+
+                        <Tab label="All" />
+
+                        {muscles.map( (groupe) => 
+                        <Tab label={groupe} key={groupe} />
                         )}
                       
                     </Tabs>
